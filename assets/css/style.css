@@ -115,13 +115,9 @@ li {
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .wrapper { width: 60%; }
@@ -159,6 +155,54 @@ main {
 }
 
 .tab-content li.active {
+  display: block;
+  animation: fade .8s ease forwards;
+}
+
+.accordion-structure {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion h2 {
+  width: 100%;
+  padding: 18px;
+  position: relative;
+  background-color: #eee;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.accordion h2::after {
+  content: '+';
+  position: absolute;
+  right: 30px;
+}
+
+.accordion li.show h2::after {
+  content: '-';
+}
+
+.accordion li.show h2, .accordion li h2:hover {
+  background-color: #ccc;
+}
+
+.accordion li p {
+  padding: 18px;
+  display: none;
+  background: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.accordion li.show p {
   display: block;
   animation: fade .8s ease forwards;
 }
