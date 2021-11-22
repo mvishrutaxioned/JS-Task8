@@ -174,3 +174,14 @@ main {
 @media only screen and (max-width: 540px) { .wrapper { width: 80%; } }
 /*media query for 320px starts here*/
 @media only screen and (max-width: 540px) { .wrapper { width: 95%; } }
+
+/*keyframe styling starts here  */
+
+@keyframes fade {
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+
+/*keyframe styling ends here  */
