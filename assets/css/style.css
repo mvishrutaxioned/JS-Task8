@@ -108,52 +108,44 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
+.wrapper { width: 60%; }
 
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
 
+.tabs li { justify-self: flex-start; }
 
+.tabs li a {
+  padding: 20px 10px;
+  border: 5px solid #fff;
+  color: #000;
+  font-size: 18px;
+}
 
+.tabs li a:hover, 
+.tabs li a.active { border-left: 5px solid #6b50e2; }
 
 
 /*=================================
   main styling ends here
 =================================*/
 
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
