@@ -143,6 +143,25 @@ main {
 .tabs li a:hover, 
 .tabs li a.active { border-left: 5px solid #6b50e2; }
 
+.tab-content {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #afafaf;
+}
+
+.tab-content li h2 { margin-bottom: 20px; }
+
+.tab-content li {
+  display: none;
+  color: #000;
+  font-size: 18px;
+  opacity: 0;
+}
+
+.tab-content li.active {
+  display: block;
+  animation: fade .8s ease forwards;
+}
 
 /*=================================
   main styling ends here
