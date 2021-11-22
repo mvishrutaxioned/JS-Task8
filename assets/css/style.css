@@ -168,3 +168,9 @@ main {
 =================================*/
 
 /*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 768px) { .wrapper { width: 70%; } }
+/*media query for 768px starts here*/
+@media only screen and (max-width: 540px) { .wrapper { width: 80%; } }
+/*media query for 320px starts here*/
+@media only screen and (max-width: 540px) { .wrapper { width: 95%; } }
