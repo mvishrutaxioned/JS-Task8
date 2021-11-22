@@ -185,27 +185,30 @@ main {
   right: 30px;
 }
 
-.accordion li.show h2::after {
+.accordion li h2.show::after {
   content: '-';
 }
 
-.accordion li.show h2, .accordion li h2:hover {
+.accordion li h2.show, .accordion li h2:hover {
   background-color: #ccc;
 }
 
-.accordion li p {
-  padding: 18px;
-  display: none;
+.accordion li div {
+  height: 0;
   background: #fff;
   font-size: 14px;
   overflow: hidden;
-  opacity: 0;
+  transition: height 0.5s ease-out;
 }
 
-.accordion li.show p {
-  display: block;
-  animation: fade .8s ease forwards;
+.accordion li div p {
+  padding: 18px;
 }
+
+/* .accordion li.show p {
+  display: block;
+  
+} */
 
 /*=================================
   main styling ends here
@@ -228,4 +231,4 @@ main {
   }
 }
 
-/*keyframe styling ends here  */
+/*keyframe styling endss here  */
